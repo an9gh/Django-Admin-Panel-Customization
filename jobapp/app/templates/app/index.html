@@ -1,0 +1,9 @@
+
+
+
+<ul>
+    {% for jobs in job %}
+    <li>
+       <a href="{% url 'job_detail' jobs.id %}"> <h1> {{jobs}}</h2></a> </li>
+    {% endfor %}
+</ul>
